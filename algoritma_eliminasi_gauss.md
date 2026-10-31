@@ -79,3 +79,25 @@ x1 <- (M[1][4] - M[1][2] * x2 - M[1][3] * x3) / M[1][1]
  
 TAMPILKAN x1, x2, x3
 ```
+
+## 5. Flowchart
+ 
+```mermaid
+flowchart TD
+    A([Mulai]) --> B[/"Masukkan a dan c"/]
+    B --> C["Susun matriks augmented M"]
+    C --> D["k = 1"]
+    D --> E{"Pivot M[k][k] = 0 ?"}
+    E -- Ya --> F{"Ada baris di bawah yang elemen kolom k tidak 0 ?"}
+    F -- Tidak --> G[/"Tidak ada solusi tunggal"/]
+    F -- Ya --> H["Tukar baris"]
+    E -- Tidak --> I["Nolkan semua elemen di bawah pivot pada kolom k"]
+    H --> I
+    I --> J{"k = 3 ?"}
+    J -- Tidak --> K["k = k + 1"]
+    K --> E
+    J -- Ya --> L["Substitusi mundur: hitung x3, x2, lalu x1"]
+    L --> M[/"Tampilkan x1, x2, x3"/]
+    G --> N([Selesai])
+    M --> N
+```
