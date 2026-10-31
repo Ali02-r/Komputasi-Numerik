@@ -33,3 +33,12 @@ Agar penulisan lebih ringkas, koefisien dan konstanta digabung dalam satu tabel 
 | a21 a22 a23 | c2 |      baris 2
 | a31 a32 a33 | c3 |      baris 3
 ```
+
+## 3. Langkah-langkah Penyelesaian
+ 
+1. Masukkan koefisien `a` dan konstanta `c`, lalu susun matriks augmented `M`.
+2. Lakukan eliminasi maju untuk kolom `k = 1, 2, 3`:
+   1. Periksa pivot, yaitu `M[k][k]`. Bila nilainya 0, cari baris di bawah baris `k` yang elemen kolom `k`-nya tidak 0, lalu tukar posisinya. Bila tidak ada baris yang bisa ditukar, tampilkan "tidak ada solusi tunggal" dan hentikan algoritma.
+   2. Untuk setiap baris `i` di bawah baris `k`, hitung `faktor = M[i][k] / M[k][k]`, lalu kurangkan baris `i` dengan faktor kali baris `k`. Dengan cara ini `M[i][k]` menjadi 0.
+3. Lakukan substitusi mundur: hitung x3 dari baris 3, kemudian x2 dari baris 2, dan terakhir x1 dari baris 1.
+4. Tampilkan x1, x2, dan x3.
