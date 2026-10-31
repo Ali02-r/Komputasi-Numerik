@@ -42,3 +42,40 @@ Agar penulisan lebih ringkas, koefisien dan konstanta digabung dalam satu tabel 
    2. Untuk setiap baris `i` di bawah baris `k`, hitung `faktor = M[i][k] / M[k][k]`, lalu kurangkan baris `i` dengan faktor kali baris `k`. Dengan cara ini `M[i][k]` menjadi 0.
 3. Lakukan substitusi mundur: hitung x3 dari baris 3, kemudian x2 dari baris 2, dan terakhir x1 dari baris 1.
 4. Tampilkan x1, x2, dan x3.
+
+## 4. Pseudocode
+ 
+```
+ALGORITMA EliminasiGauss
+MASUKAN  : a (koefisien 3x3), c (konstanta, 3 elemen)
+KELUARAN : x1, x2, x3
+ 
+M <- matriks augmented dari a dan c
+ 
+// Fase 1: eliminasi maju
+ULANGI untuk k = 1 sampai 3
+    JIKA M[k][k] = 0 MAKA
+        cari baris i > k dengan M[i][k] tidak sama dengan 0
+        JIKA ada MAKA
+            tukar baris k dan baris i
+        SELAIN ITU
+            TAMPILKAN "Tidak ada solusi tunggal"
+            BERHENTI
+        AKHIR JIKA
+    AKHIR JIKA
+ 
+    ULANGI untuk i = k+1 sampai 3
+        faktor <- M[i][k] / M[k][k]
+        ULANGI untuk j = k sampai 4
+            M[i][j] <- M[i][j] - faktor * M[k][j]
+        AKHIR ULANGI
+    AKHIR ULANGI
+AKHIR ULANGI
+ 
+// Fase 2: substitusi mundur
+x3 <- M[3][4] / M[3][3]
+x2 <- (M[2][4] - M[2][3] * x3) / M[2][2]
+x1 <- (M[1][4] - M[1][2] * x2 - M[1][3] * x3) / M[1][1]
+ 
+TAMPILKAN x1, x2, x3
+```
