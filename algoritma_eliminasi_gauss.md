@@ -101,3 +101,52 @@ flowchart TD
     G --> N([Selesai])
     M --> N
 ```
+
+## 6. Contoh Perhitungan
+ 
+Sistem yang akan diselesaikan:
+ 
+```
+x1 + 2·x2 +   x3 = 2
+2x1 +   x2 -   x3 = 7
+3x1        +   x3 = 0
+```
+ 
+Matriks augmented awal (koefisien x2 pada persamaan ketiga adalah 0):
+ 
+```
+| 1   2   1 | 2 |
+| 2   1  -1 | 7 |
+| 3   0   1 | 0 |
+```
+ 
+**Kolom 1** (pivot = 1):
+ 
+- baris 2 dikurangi 2 × baris 1, hasilnya `[0, -3, -3 | 3]`
+- baris 3 dikurangi 3 × baris 1, hasilnya `[0, -6, -2 | -6]`
+```
+| 1   2   1 |  2 |
+| 0  -3  -3 |  3 |
+| 0  -6  -2 | -6 |
+```
+ 
+**Kolom 2** (pivot = -3): faktor = -6 / -3 = 2
+ 
+- baris 3 dikurangi 2 × baris 2, hasilnya `[0, 0, 4 | -12]`
+```
+| 1   2   1 |   2 |
+| 0  -3  -3 |   3 |
+| 0   0   4 | -12 |
+```
+ 
+**Substitusi mundur:**
+ 
+```
+x3 = -12 / 4                      = -3
+x2 = (3 - (-3)(-3)) / (-3)        = -6 / -3 = 2
+x1 = (2 - (2)(2) - (1)(-3)) / 1   = 2 - 4 + 3 = 1
+```
+ 
+Hasil: **x1 = 1, x2 = 2, x3 = -3**
+ 
+Pengecekan pada persamaan kedua: `2(1) + 2 - (-3) = 2 + 2 + 3 = 7` (sesuai). Pada persamaan ketiga: `3(1) + (-3) = 0` (sesuai).
