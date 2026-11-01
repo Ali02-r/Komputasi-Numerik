@@ -150,3 +150,9 @@ x1 = (2 - (2)(2) - (1)(-3)) / 1   = 2 - 4 + 3 = 1
 Hasil: **x1 = 1, x2 = 2, x3 = -3**
  
 Pengecekan pada persamaan kedua: `2(1) + 2 - (-3) = 2 + 2 + 3 = 7` (sesuai). Pada persamaan ketiga: `3(1) + (-3) = 0` (sesuai).
+
+## 7. Catatan
+ 
+- Eliminasi Gauss dipilih karena langkahnya berurutan dan mudah ditelusuri, serta bisa dipakai untuk SPL dengan jumlah variabel berapa pun.
+- Jika sistem tidak mempunyai solusi tunggal (misalnya ada dua persamaan yang saling berkelipatan), pivot akan bernilai 0 dan tidak ada baris yang dapat ditukar, sehingga algoritma berhenti dengan pesan pada langkah 2.
+- Algoritma ini diimplementasikan sebagai kode Python di Google Colab pada nomor 6.
