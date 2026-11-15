@@ -1,0 +1,41 @@
+Prompt 1
+Buatkan kode Python untuk algoritma penyelesaian sistem persamaan linear
+3 variabel.
+
+Prompt 2
+Ubah kode tersebut agar bisa dijalankan di Google Colab dan mudah dipahami.
+
+Prompt 3
+Dosen meminta tugas ini disimpan di repository GitHub. Apa yang harus saya
+lakukan untuk menyimpannya?
+
+Prompt 4
+Buatkan algoritma dan kode python di google colab yang nantinya akan diupload di repository github
+
+Prompt 5
+Pilihkan dan buatkan metode yang mudah dijelaskan dan mudah dipahami.
+
+Prompt 6
+Buat menjadi 5 tahap bagian, tidak harus menjadi satu yang langsung jadi
+
+Prompt 7
+Apakah isi file tahap-tahap itu berbeda dari file lengkap yang kamu kirim
+sebelumnya?
+
+Prompt 8
+Menurut anda, apakah hasil algoritma tersebut sudah profesional dan mudah dipahami?
+
+Prompt 9
+Terapkan saran yang anda berikan tadi
+
+Prompt 10
+Buatkan file README yang cocok untuk repository Komputasi Numerik ini.
+
+Prompt 11
+Lanjut buatkan kode Python di Google Colab yang mengikuti
+algoritma tadi, tersusun dalam cell-cell yang bisa dijalankan satu per
+satu, dan dibagi menjadi beberapa tahap.
+
+Prompt 12
+Lanjut tambahkan keterangan detail untuk setiap baris kode dan
+setiap cell.
