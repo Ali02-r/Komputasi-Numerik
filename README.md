@@ -21,5 +21,5 @@ Status diperbarui seiring perkembangan pengerjaan.
 **Topik 1: SPL 3 variabel (Eliminasi Gauss)**
 - [x] Algoritma (deskripsi, pseudocode, flowchart, contoh perhitungan)
 - [x] Kode Python di Google Colab (tiap langkah dalam cell tersendiri)
-- [ ] Penjelasan detail tiap baris kode dan cell
+- [x] Penjelasan detail tiap baris kode dan cell
 - [ ] Video penjelasan
