@@ -22,4 +22,4 @@ Status diperbarui seiring perkembangan pengerjaan.
 - [x] Algoritma (deskripsi, pseudocode, flowchart, contoh perhitungan)
 - [x] Kode Python di Google Colab (tiap langkah dalam cell tersendiri)
 - [x] Penjelasan detail tiap baris kode dan cell
-- [ ] Video penjelasan
+- [x] Video penjelasan
