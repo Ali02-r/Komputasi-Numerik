@@ -11,7 +11,7 @@ Repository ini berisi tugas mata kuliah **Komputasi Numerik**: algoritma, kode P
  
 | No | Topik | Metode | Status |
 |----|-------|--------|--------|
-| 1 | Sistem Persamaan Linear (SPL) 3 variabel | Eliminasi Gauss | Dalam pengerjaan |
+| 1 | Sistem Persamaan Linear (SPL) 3 variabel | Eliminasi Gauss | Selesai |
 | 2 | Persamaan non linear | Bisection | Belum dimulai |
  
 Status diperbarui seiring perkembangan pengerjaan.
@@ -20,6 +20,6 @@ Status diperbarui seiring perkembangan pengerjaan.
  
 **Topik 1: SPL 3 variabel (Eliminasi Gauss)**
 - [x] Algoritma (deskripsi, pseudocode, flowchart, contoh perhitungan)
-- [ ] Kode Python di Google Colab (tiap langkah dalam cell tersendiri)
+- [x] Kode Python di Google Colab (tiap langkah dalam cell tersendiri)
 - [ ] Penjelasan detail tiap baris kode dan cell
 - [ ] Video penjelasan
